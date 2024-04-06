@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind</title>
+ </head>
+ <body class="bg-slate-300 md:bg-slate-400">
+   <div class="container">
+      <nav class="w-full h-14 flex  justify-between px-4 items-center md:px-4">
+         <div class="logo">
+            <img src="images/logo.png" alt="" class="w-13 h-11 mx-10 bg-slate-100 rounded-full">
+         </div>
+         <ul class="md:flex hidden font-semibold">
+            <li class="mx-5 cursor-pointer hover:text-blue-300">HOME</li>
+            <li class="mx-5 cursor-pointer hover:text-blue-300">SERVICES</li>
+            <li class="mx-5 cursor-pointer hover:text-blue-300">PRODUCT</li>
+            <li class="mx-5 cursor-pointer hover:text-blue-300">RESOURCES</li>
+            <li class="mx-5 cursor-pointer hover:text-blue-300">PRICING</li>
+         </ul>
+         <div class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer">Login/Signup</div>
+         <div class="md:hidden">
+            <a class="text-4xl" href="#">&#8801;</a>
+         </div>
+      </nav>
+      
+      <div class="grid-cols-2 md:flex md:h-auto mt-10">
+         <p class="font-semibold text-6xl text-blue-600 leading-normal m-0 text-center p-0 mt-3 md:text-8xl md:text-pretty">Schedule
+             <em class="text-yellow-600">appointments</em> online directly from your website</p> <br><br>
+         <img src="images/img1.jpg" class="w-full h-auto mt-0 p-0 md:w-1/2 md:h-1/2 md:rounded-full mr-10">
+      </div>
+      <div class="mt-10 h-auto w-full md:w-full md:h-full">
+         <p class="text-center text-2xl font-normal leading-10 md:text-4xl md:leading-normal"><b class="text-yellow-600">Creative</b> makes it easy for your customers to book appointments with you, right from your website</p>
+      </div>
+      <div class="h-auto w-auto md:w-auto md:h-auto">
+             <!-- Calendly badge widget begin -->
+                  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                  <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/meetwithup971/45min', text: 'Book a meeting', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+             <!-- Calendly badge widget end -->
+      </div>
+   </div>
+ </body>
+ </html>
